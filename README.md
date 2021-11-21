@@ -24,6 +24,15 @@ npm install git+ssh://git@gitlab.amaze-escape.com/360/name-of-project.git
 npm upgrade git+ssh://git@gitlab.amaze-escape.com/360/name-of-project.git
 ```
 
+##  Naming Convention
+
+| Style          | Category                                                           |
+| !------------- | !----------------------------------------------------------------- |
+| UpperCamelCase | class / interface / type / enum / decorator / type parameters      |
+| lowerCamelCase | variable / parameter / function / method / property / module alias |
+| CONSTANT_CASE  | global constant values, including enum values                      |
+| #ident         | private identifier, we don't use 'private/public'                  |
+
 ## Consume bundle.js
 
 ### Bundle.js
