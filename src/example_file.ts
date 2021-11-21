@@ -1,33 +1,38 @@
 import * as ExampleSpace from "./index";
 
+/**
+     * Classes should contain (a link to) a minimal working example
+     * ```js
+     * // Example
+     * const ES = ExampleSpace.ExampleClass()
+     * ES.publicNumber = 1234
+     * ```
+     */
 export class ExampleClass {
     /** @ignore */
-    #privatestring: string = "private text"
+    #parentElement!: HTMLElement
+    #privateString: string = "private text"
+    publicNumber: number = 1234
 
-    /**
-     * This is a public variable/endpoint which you can access directly
-     * ```js
-     * // Example
-     * const ES = ExampleSpace.ExampleClass()
-     * ES.publicnumber = 1234
-     * ```
-     */
-    public publicnumber: number = 1234
-
-    /**
-     * With getters and setters you can add logic to your variables/endpoints
-     * ```js
-     * // Example
-     * const ES = ExampleSpace.ExampleClass()
-     * ES.privatestring = "My Pretty String"
-     * ```
-     */
-    public set privatestring(privatestring: string) {
-        // Add logic here
-        this.#privatestring = privatestring
+    set parentId(parentId: string) {
+        this.#parentElement = document.querySelector(parentId)!;
     }
-    public get privatestring() {
+
+    get parentElement() {
         // Add logic here
-        return this.#privatestring
+        return this.#parentElement
+    }
+
+    async printAsync(elements: string[]) {
+        for (const element of elements) {
+            await this.#delay(400)
+            this.#parentElement.append(element)
+        }
+    }
+
+    async #delay(milliseconds: number) {
+        return new Promise<void>((resolve) => {
+            setTimeout(resolve, milliseconds)
+        });
     }
 }
