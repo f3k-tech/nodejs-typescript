@@ -24,7 +24,9 @@ npm install git+ssh://git@github.com:username/name-of-project.git
 npm upgrade git+ssh://git@github.com:username/name-of-project.git
 ```
 
-##  Naming Convention
+## Conventions
+
+###  Naming Convention
 
 | Style          | Category                                                           |
 | :------------- | :----------------------------------------------------------------- |
@@ -33,13 +35,17 @@ npm upgrade git+ssh://git@github.com:username/name-of-project.git
 | CONSTANT_CASE  | global constant values, including enum values                      |
 | #ident         | private identifier, we don't use 'private/public'                  |
 
-## Documentation Convention
+### Documentation Convention
 
 | Category | Comments                                                                                                                |
 | :------- | :---------------------------------------------------------------------------------------------------------------------- |
 | Private  | all private categories, should be ignored (unless relevant to end user)                                                 |
 | Public   | names of public categories should be self explanatory. Only add additional info if the name cannot describe the purpose |
 | Classes  | public classes should contain (a link to) a minimal working example                                                     |
+
+### Comments Convention
+
+Functions should be short, unambiguous and self explanatory. Thus not need commenting. If fuctions become too complicated, try to cut them up into smaller functions. Use comments only as a last resort.
 
 ## Consume bundle.js
 
