@@ -15,13 +15,13 @@
 ## Install
 
 ```sh
-npm install git+ssh://git@gitlab.amaze-escape.com/360/name-of-project.git
+npm install git+ssh://git@github.com:username/name-of-project.git
 ```
 
 ## Upgrade
 
 ```sh
-npm upgrade git+ssh://git@gitlab.amaze-escape.com/360/name-of-project.git
+npm upgrade git+ssh://git@github.com:username/name-of-project.git
 ```
 
 ##  Naming Convention
