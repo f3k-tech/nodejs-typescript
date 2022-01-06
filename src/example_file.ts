@@ -35,4 +35,16 @@ export class ExampleClass {
             setTimeout(resolve, milliseconds)
         });
     }
+    
+    async #waitForImage(image: HTMLImageElement) {
+        return new Promise<void>((resolve) => {
+            const checkExist = setInterval(function () {
+                console.log(image)
+                if (image.src !== 'undefined') {
+                    clearInterval(checkExist)
+                    resolve()
+                }
+            }, 100)
+        });
+    }
 }
