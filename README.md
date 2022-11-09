@@ -29,7 +29,7 @@ npm upgrade git+ssh://git@github.com:username/name-of-project.git
 ###  Naming Convention
 
 | Style          | Category                                                           |
-| :------------- | :----------------------------------------------------------------- |
+|:---------------|:-------------------------------------------------------------------|
 | UpperCamelCase | class / interface / type / enum / decorator / type parameters      |
 | lowerCamelCase | variable / parameter / function / method / property / module alias |
 | CONSTANT_CASE  | global constant values, including enum values                      |
@@ -38,7 +38,7 @@ npm upgrade git+ssh://git@github.com:username/name-of-project.git
 ### Documentation Convention
 
 | Category | Comments                                                                                                                |
-| :------- | :---------------------------------------------------------------------------------------------------------------------- |
+|:---------|:------------------------------------------------------------------------------------------------------------------------|
 | Private  | all private categories, should be ignored (unless relevant to end user)                                                 |
 | Public   | names of public categories should be self explanatory. Only add additional info if the name cannot describe the purpose |
 | Classes  | public classes should contain (a link to) a minimal working example                                                     |
