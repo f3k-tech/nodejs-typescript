@@ -1,6 +1,6 @@
-import * as ExampleSpace from "../index";
+import { ExampleSpace } from "../index";
 
-let ES = new ExampleSpace.ExampleClass
+const ES = new ExampleSpace.default
 
 
 describe('Get default publicNumber', function () {

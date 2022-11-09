@@ -1,1 +1,1 @@
-export * from "./example_file"
+export * as ExampleSpace from "./example_file"
