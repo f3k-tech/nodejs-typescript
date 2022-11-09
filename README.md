@@ -60,7 +60,7 @@ Functions should be short, unambiguous and self explanatory. Thus not need comme
 <body>
     <!-- HTML code goes here -->
     <!-- Include JS -->
-    <script src="path/to/my-project/lib/bundle.js"></script>
+    <script src="path/to/my-project/dist/bundle.js"></script>
 </body>
 </html>
 ```
