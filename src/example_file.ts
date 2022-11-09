@@ -11,8 +11,8 @@ import * as ExampleSpace from "./index";
 export class ExampleClass {
     /** @ignore */
     #parentElement!: HTMLElement
-    #privateString: string = "private text"
-    publicNumber: number = 1234
+    #privateString = "private text"
+    publicNumber = 1234
 
     set parentId(parentId: string) {
         this.#parentElement = document.querySelector(parentId)!;
