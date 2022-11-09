@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "module": "CommonJS",
+    "module": "es2020",
     "declaration": true,
-    "outDir": "./lib",
+    "outDir": "./dist",
     "strict": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node"
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "**/__tests__/*"]
